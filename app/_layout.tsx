@@ -1,5 +1,47 @@
-import { Stack } from "expo-router";
+import { Drawer } from 'expo-router/drawer';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function RootLayout() {
-  return <Stack />;
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Drawer>
+        <Drawer.Screen
+          name="index"
+          options={{
+            drawerLabel: 'Home',
+            title: 'Home',
+          }}
+        />
+        <Drawer.Screen
+          name="ShowLess"
+          options={{
+            drawerLabel: 'Pokemon Show Less',
+            title: 'Pokemon Show Less',
+          }}
+        />
+        <Drawer.Screen
+          name="ShowMore"
+          options={{
+            drawerLabel: 'Pokemon Show More',
+            title: 'Pokemon Show More',
+          }}
+        />
+        <Drawer.Screen
+          name="homeSquare"
+          options={{
+            drawerLabel: 'Squares Change',
+            title: 'Squares Change',
+          }}
+        />
+
+        <Drawer.Screen
+          name="UfjfMenu"
+          options={{
+            drawerLabel: 'Menu UFJF',
+            title: 'Menu UFJF',
+          }}
+        />
+      </Drawer>
+    </GestureHandlerRootView>
+  );
 }
