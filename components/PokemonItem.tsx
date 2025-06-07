@@ -15,10 +15,10 @@ export default function PokemonItem({ pokemon }: PokemonItemProps) {
 
     const styles = StyleSheet.create({
         container: {
-            flex: 1,
+            width: '100%',
             flexDirection: 'row',
             alignItems: 'center',
-            justifyContent: 'flex-start',
+            justifyContent: 'center',
             gap: 10,
             marginTop: 10
         },

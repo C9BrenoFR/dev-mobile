@@ -38,6 +38,7 @@ export default function PokemonListScreen() {
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <Text>Pokemon List</Text>
             <FlatList
+                style={{ width: '100%' }}
                 data={pokemons}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => <PokemonItem key={item.id} pokemon={item} />}
