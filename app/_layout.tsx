@@ -35,6 +35,14 @@ export default function RootLayout() {
         />
 
         <Drawer.Screen
+          name="PokemonDatabase"
+          options={{
+            drawerLabel: 'Lista de pokemons',
+            title: 'Lista de pokemons',
+          }}
+        />
+
+        <Drawer.Screen
           name="UfjfMenu"
           options={{
             drawerLabel: 'Menu UFJF',
@@ -42,6 +50,7 @@ export default function RootLayout() {
           }}
         />
       </Drawer>
+
     </GestureHandlerRootView>
   );
 }
